@@ -1,0 +1,36 @@
+.custom-info {
+    list-style: none;
+    border-bottom: 1px solid @lineColor;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 14px;
+    color: @customColor;
+    .fs(15);
+    position: relative;
+    .info {
+        position: relative;
+        margin-right: 100px;
+        height: 100%;
+    }
+    .go {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        background-color: @goBgColor;
+        padding: 0 20px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 6px;
+        color: @highlightColor;
+        border-radius: 14px;
+        .icon {
+            width: 10px;
+            height: 20px;
+            background: url(../image/icon2.png) no-repeat -88px 7px;
+            background-size: 250px 250px;
+        }
+        .text {
+            font-style: normal;
+        }
+    }
+}

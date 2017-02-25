@@ -1,0 +1,43 @@
+.position-list {
+    margin: 0;
+    padding: 0;
+    .item {
+        margin: 0;
+        padding: 14px;
+        list-style: none;
+        border-bottom: 1px solid @lineColor;
+        .item-logo {
+            width: 60px;
+            height: 60px;
+        }
+        .item-desc {
+            margin-left: 70px;
+            height: 62px;
+            color: @listColor;
+            .item-title {
+                .fs(20);
+                margin-bottom: 6px;
+                width: 80%;
+            }
+            .item-info {
+                margin-bottom: 6px;
+                width: 100%;
+                height: 16px;
+                line-height: 16px;
+                overflow: hidden;
+                .item-pos {
+                    .fs(16);
+                    width: 60%;
+                }
+                .item-salary {
+                    .fs(18);
+                    color: @highlightColor;
+                }
+            }
+            .item-time {
+                .fs(14);
+                color: @listTimeColor;
+            }
+        }
+    }
+}
