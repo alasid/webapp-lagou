@@ -1,0 +1,62 @@
+.position-class {
+    .positype {
+        background: @defaultColor;
+        border-bottom: 1px solid @lineColor;
+        padding: 13px 10px;
+        span {
+            display: block;
+            margin: 0 0 15px 5px;
+            .fs(15);
+            
+            color: @customColor;
+        }
+        button {
+        background-color: @btnbgColor;
+        color: @btnColor;
+        width: 32%;
+        height: 40px;
+        .fs(17);
+        padding: 0;
+        margin-right: 0px;
+        border-radius: 20px;
+        margin-bottom: 5px;
+        &.active {
+            background-color: @headbgColor; 
+            color: @defaultColor;
+        }
+        }
+    }
+    .list {
+        .item {
+            height: 45px;
+            padding: 15px;
+            border-bottom: 1px solid @lineColor;
+        }
+        .left {
+            float: left;
+            width: 65%;
+            overflow: hidden;
+            h3 {
+                color: @listColor;
+                .fs(20);
+                font-weight: normal;
+                overflow: hidden;
+                padding-top: 4px;
+            }
+            p {
+                color: @listTimeColor;
+                .fs(14);
+                margin-top: 5px;
+            }
+        }
+        .right {
+            float: right;
+            width: 30%;
+            line-height: 40px;
+            color: @headbgColor;
+            .fs(19);
+            text-align: center;
+        }
+    }
+    
+}

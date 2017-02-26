@@ -8,7 +8,11 @@ angular.module('app')
         }).state('position',{
             url: '/position/:id',
             templateUrl: 'view/position.html',
-            cotroller: 'positionController'
+            controller: 'positionController'
+        }).state('company',{
+            url: '/company/:id',
+            templateUrl: 'view/company.html',
+            controller: 'companyController'
         });
         $urlRouterProvider.otherwise('main');
     }])

@@ -40,6 +40,7 @@
 .p-r {
   position: relative;
 }
+/*首页 main*/
 .head {
   background-color: #00b38a;
   height: 45px;
@@ -169,6 +170,7 @@
   width: 18px;
   height: 17px;
 }
+/*职位详情 position*/
 .bottom-btn {
   position: fixed;
   height: 44px;
@@ -186,7 +188,7 @@
   padding-left: 15px;
   height: 0.96rem;
   line-height: 0.96rem;
-  font-size: 0.4rem;
+  font-size: 0.42666667rem;
   font-weight: 500;
   color: #00b38a;
   background-color: #d2f9f0;
@@ -195,7 +197,7 @@
   padding: 15px;
   line-height: 22px;
   margin-left: 0;
-  font-size: 0.37333333rem;
+  font-size: 0.4rem;
   color: #555;
 }
 .position-eval {
@@ -227,7 +229,7 @@
 .position-eval .list-item .info-wrap .name {
   position: absolute;
   margin-left: 40px;
-  font-size: 0.4rem;
+  font-size: 0.42666667rem;
   top: -4px;
 }
 .position-eval .list-item .info-wrap .time {
@@ -241,10 +243,11 @@
   font-size: 0;
   position: absolute;
   width: 85%;
-  bottom: -3px;
+  bottom: -4px;
   left: 40px;
 }
 .position-eval .list-item .info-wrap .score-wrap li {
+  margin-right: 3%;
   font-size: 0.32rem;
   display: inline-block;
 }
@@ -253,7 +256,9 @@
 }
 .position-eval .list-item .info-wrap .score-wrap li .score {
   color: #f40;
-  margin-right: 5px;
+}
+.position-eval .list-item .info-wrap .score-wrap li:nth-child(4) {
+  margin-right: 0;
 }
 .position-eval .list-item .tags-wrap {
   font-size: 0;
@@ -272,8 +277,8 @@
 }
 .position-eval .list-item .review-content {
   color: #333;
-  font-size: 0.37333333rem;
-  line-height: 0.42666667rem;
+  font-size: 0.42666667rem;
+  line-height: 0.64rem;
 }
 .position-eval .list-item .zan-wrap {
   font-size: 0;
@@ -286,7 +291,8 @@
 }
 .position-eval .list-item .zan-wrap i {
   display: inline-block;
-  background: #333;
+  background: url(../image/icon2.png) no-repeat -43.5px -218px;
+  background-size: 250px 250px;
   width: 16px;
   height: 15px;
   margin-bottom: -2px;
@@ -350,7 +356,7 @@
   width: 15px;
   height: 15px;
   margin: 0 auto;
-  background: url(../../image/icon2.png) no-repeat -116px -20px;
+  background: url(../../image/icon.png) no-repeat -170px -41px;
   background-size: 250px 250px;
 }
 .position-info .postitle .text {
@@ -377,7 +383,7 @@
   height: 13px;
   width: 13px;
   vertical-align: middle;
-  background: url(../../image/icon2.png) no-repeat -1px -80px;
+  background: url(../../image/icon.png) no-repeat -66px -48px;
   background-size: 250px 250px;
 }
 .position-info .detail .text {
@@ -390,29 +396,99 @@
   color: #888;
   font-size: 0.4rem;
 }
-.company {
+.companyInfo {
   overflow: hidden;
   border-bottom: 1px solid #e8e8e8;
   padding: 15px;
 }
-.company .logo {
+.companyInfo .logo {
   width: 1.6rem;
   height: 1.6rem;
   float: left;
 }
-.company .desc {
+.companyInfo .desc {
   margin-left: 70px;
 }
-.company .desc .dleft {
+.companyInfo .desc .dleft {
+  min-height: 10px;
+  min-width: 10px;
+  max-width: 80%;
   float: left;
 }
-.company .desc .dright {
+.companyInfo .desc .dleft .title {
+  color: #00b38a;
+  font-size: 0.58666667rem;
+  margin-bottom: 5px;
+}
+.companyInfo .desc .dleft .info {
+  color: #888;
+  font-size: 0.4rem;
+}
+.companyInfo .desc .dright {
   float: right;
   display: inline-block;
   width: 23px;
   height: 29px;
-  background: #ccc;
+  background: url(../image/icon.png) no-repeat -222.5px -3.5px;
+  background-size: 250px 250px;
   margin-top: 10px;
+}
+/*公司详情 company*/
+.position-class .positype {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 13px 10px;
+}
+.position-class .positype span {
+  display: block;
+  margin: 0 0 15px 5px;
+  font-size: 0.4rem;
+  color: #555;
+}
+.position-class .positype button {
+  background-color: #f5f5f5;
+  color: #c4c4c4;
+  width: 32%;
+  height: 40px;
+  font-size: 0.45333333rem;
+  padding: 0;
+  margin-right: 0px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+.position-class .positype button.active {
+  background-color: #00b38a;
+  color: #fff;
+}
+.position-class .list .item {
+  height: 45px;
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.position-class .list .left {
+  float: left;
+  width: 65%;
+  overflow: hidden;
+}
+.position-class .list .left h3 {
+  color: #333;
+  font-size: 0.53333333rem;
+  font-weight: normal;
+  overflow: hidden;
+  padding-top: 4px;
+}
+.position-class .list .left p {
+  color: #888;
+  font-size: 0.37333333rem;
+  margin-top: 5px;
+}
+.position-class .list .right {
+  float: right;
+  width: 30%;
+  line-height: 40px;
+  color: #00b38a;
+  font-size: 0.50666667rem;
+  text-align: center;
 }
 html,
 body {

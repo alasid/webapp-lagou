@@ -12,7 +12,7 @@ angular.module('app')
         },{
             id: '1212',
             name: 'web前端',
-            imgSrc: 'image/company-1.png',
+            imgSrc: 'image/aqy.jpg',
             companyName: '阿里',
             city: '广州',
             industry: '互联网',

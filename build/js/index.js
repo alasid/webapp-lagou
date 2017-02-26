@@ -12,10 +12,17 @@ angular.module('app')
         }).state('position',{
             url: '/position/:id',
             templateUrl: 'view/position.html',
-            cotroller: 'positionController'
+            controller: 'positionController'
+        }).state('company',{
+            url: '/company/:id',
+            templateUrl: 'view/company.html',
+            controller: 'companyController'
         });
         $urlRouterProvider.otherwise('main');
     }])
+angular.module('app').controller('companyController',['$scope',function($scope) {
+    
+}])
 'use strict';
 angular.module('app')
     .controller('mainController',['$scope',function($scope) {
@@ -30,7 +37,7 @@ angular.module('app')
         },{
             id: '1212',
             name: 'web前端',
-            imgSrc: 'image/company-1.png',
+            imgSrc: 'image/aqy.jpg',
             companyName: '阿里',
             city: '广州',
             industry: '互联网',
@@ -46,11 +53,11 @@ angular.module('app')
 })(angular);
 
 'use strict';
-angular.module('app').directive('appCompany',[function() {
+angular.module('app').directive('appCompanyInfo',[function() {
     return {
         restrict: 'A',
         replace: true,
-        templateUrl: 'view/template/company.html'
+        templateUrl: 'view/template/companyInfo.html'
     }
 }])
 
@@ -99,6 +106,16 @@ angular.module('app').directive('appHeadBar',[function() {
             };
         }
     };
+}])
+
+
+'use strict';
+angular.module('app').directive('appPositionClass',[function() {
+    return {
+        restrict: 'A',
+        replace: true,
+        templateUrl: 'view/template/positionClass.html'
+    }
 }])
 
 

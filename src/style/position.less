@@ -17,7 +17,7 @@
         padding-left: 15px;
         .h(36);
         .lh(36);
-        .fs(15);
+        .fs(16);
         font-weight: 500;
         color: @headbgColor;
         background-color: @positiondesBg;
@@ -26,7 +26,7 @@
         padding: 15px;
         line-height: 22px;
         margin-left: 0;
-        .fs(14);
+        .fs(15);
         color: @customColor;
     }
 }
@@ -58,7 +58,7 @@
             .name {
                 position: absolute;
                 margin-left: 40px;
-                .fs(15);
+                .fs(16);
                 top: -4px;
             }
             .time {
@@ -69,12 +69,14 @@
                 top: -4px;
             }
             .score-wrap {
+                
                 font-size: 0;
                 position: absolute;
                 width: 85%;
-                bottom: -3px;
+                bottom: -4px;
                 left: 40px;
                 li {
+                    margin-right: 3%;
                     .fs(12);
                     display: inline-block;
                     .type {
@@ -82,9 +84,12 @@
                     }
                     .score {
                         color: #f40;
-                        margin-right: 5px;
+                    }
+                    &:nth-child(4) {
+                        margin-right: 0;
                     }
                 }
+                
             }
         }
         .tags-wrap {
@@ -104,8 +109,8 @@
         }
         .review-content {
             color: #333;
-            .fs(14);
-            .lh(16);
+            .fs(16);
+            .lh(24);
         }
         .zan-wrap {
             font-size: 0;
@@ -117,7 +122,8 @@
             }
             i {
                 display: inline-block;
-                background: #333;
+                background: url(../image/icon2.png) no-repeat -43.5px -218px;
+                background-size: 250px 250px;
                 width: 16px;
                 height: 15px;
                 margin-bottom: -2px;
