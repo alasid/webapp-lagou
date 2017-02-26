@@ -4,6 +4,9 @@ angular.module('app').directive('appCompanyInfo',[function() {
     return {
         restrict: 'A',
         replace: true,
-        templateUrl: 'view/template/companyInfo.html'
+        templateUrl: 'view/template/companyInfo.html',
+        scope: {
+            com: '='
+        }
     }
 }])
