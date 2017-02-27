@@ -4,6 +4,9 @@ angular.module('app').directive('appPositionClass',[function() {
     return {
         restrict: 'A',
         replace: true,
-        templateUrl: 'view/template/positionClass.html'
+        templateUrl: 'view/template/positionClass.html',
+        scope: {
+            com: '='
+        }
     }
 }])
