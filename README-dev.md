@@ -40,3 +40,18 @@
 - 创建职位模板 路由 职位控制器
 - 职位列表 添加事件 通过ui-sref="position({id:item.id})" 跳转到对应页面
 - 创建公共head bar 模板 指令 样式 
+
+## 配置公司页面 company.html
+
+* 创建公司模板 路由 控制器companyControll.js
+* 点击公司模块跳转 ui-sref="company{{id:1}}"
+* 包含 `headBar.html` `positionInfo.html` `positionClass.html`
+* 开发positionClass指令 创建positionClass样式文件并引入index.less
+
+## 动态获取数据
+
+* 从data.json中获取数据，动态添加到页面
+* mainController 中注入$http 使用get方法获取 把响应的数据赋值给scope.list
+* positionInfo职位详情中的收藏设置为登录后显示 未登录时投简历显示为去登录 ng-show="isLogin" positionInfo中isLogin: "=" 
+* ng-bind="isLogin?'投个简历':'去登录'"
+* 在positionController中注入$http 获取数据加载到页面
