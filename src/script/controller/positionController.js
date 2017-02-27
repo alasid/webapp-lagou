@@ -1,5 +1,6 @@
 (function(angular) {
-    angular.module('app').controller('positionController',['$q','$http','$state','$scope',function($q,$http,$state,$scope) {
+    angular.module('app').controller('positionController',['$q','$http','$state','$scope','cache',function($q,$http,$state,$scope,cache) {
+        cache.remove('to');
         $scope.isLogin = false;
     //     function getPosition() {
     //         var def = $q.defer();

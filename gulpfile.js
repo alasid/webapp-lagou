@@ -34,6 +34,7 @@ gulp.task('html', function () {
 // 拷贝json文件
 gulp.task('json', function () {
     gulp.src(path.srcPath + 'data/**/*.json')
+        .pipe($.plumber())
         .pipe(gulp.dest(path.devPath + 'data'))
         .pipe(gulp.dest(path.prdPath + 'data'))
         .pipe($.connect.reload());
@@ -42,6 +43,7 @@ gulp.task('json', function () {
 // 编译 压缩less文件
 gulp.task('less', function () {
     gulp.src(path.srcPath + 'style/index.less')
+        .pipe($.plumber())
         .pipe($.less())
         .pipe(gulp.dest(path.devPath + 'css'))
         .pipe($.cssmin())
@@ -52,6 +54,7 @@ gulp.task('less', function () {
 // 合并 压缩混淆js文件
 gulp.task('js', function () {
     gulp.src(path.srcPath + 'script/**/*.js')
+        .pipe($.plumber())
         .pipe($.concat('index.js'))
         .pipe(gulp.dest(path.devPath + 'js'))
         .pipe($.uglify())
@@ -62,6 +65,7 @@ gulp.task('js', function () {
 // 压缩image文件
 gulp.task('image', function () {
     gulp.src(path.srcPath + 'image/**/*')
+        .pipe($.plumber())
         .pipe(gulp.dest(path.devPath + 'image'))
         .pipe($.imagemin())
         .pipe(gulp.dest(path.prdPath + 'image'))

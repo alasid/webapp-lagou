@@ -11,7 +11,7 @@
       "positionList": [{
         "id": "p3",
         "name": "技术主管",
-        "createdDate": "2017-02-27 11:05",
+        "createdDate": "今天 09:05",
         "salary": "20k-25k"
       }]
     }, {
@@ -20,7 +20,7 @@
       "positionList": [{
         "id": "y3",
         "name": "运营总监",
-        "createdDate": "2017-02-27 12:05",
+        "createdDate": "今天 14:05",
         "salary": "25k以上"
       }]
     }]

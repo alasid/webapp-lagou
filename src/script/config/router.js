@@ -13,6 +13,10 @@ angular.module('app')
             url: '/company/:id',
             templateUrl: 'view/company.html',
             controller: 'companyController'
+        }).state('search',{
+            url: '/search',
+            templateUrl: 'view/search.html',
+            controller:  'searchController'
         });
         $urlRouterProvider.otherwise('main');
     }])

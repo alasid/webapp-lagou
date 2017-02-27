@@ -11,7 +11,7 @@
       "positionList": [{
         "id": "p2",
         "name": "IOS工程师",
-        "createdDate": "2017-02-27 11:05",
+        "createdDate": "今天 15:05",
         "salary": "10k-15k"
       }]
     }, {
@@ -20,7 +20,7 @@
       "positionList": [{
         "id": "y2",
         "name": "运营总监",
-        "createdDate": "2017-02-27 12:05",
+        "createdDate": "今天 18:05",
         "salary": "25k以上"
       }]
     }]
