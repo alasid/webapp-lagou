@@ -1,0 +1,27 @@
+{
+    "id": "c2",
+    "imageUrl": "/image/bst.jpg",
+    "name": "百事通",
+    "industry": "互联网电视",
+    "state": "B轮",
+    "people": "150人以上",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "技术",
+      "positionList": [{
+        "id": "p2",
+        "name": "IOS工程师",
+        "createdDate": "2017-02-27 11:05",
+        "salary": "10k-15k"
+      }]
+    }, {
+      "id": "yunying",
+      "name": "运营",
+      "positionList": [{
+        "id": "y2",
+        "name": "运营总监",
+        "createdDate": "2017-02-27 12:05",
+        "salary": "25k以上"
+      }]
+    }]
+}

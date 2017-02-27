@@ -1,0 +1,19 @@
+{
+  "id": "p1",
+  "imageUrl": "/image/wm.jpg",
+  "name": "前端工程师",
+  "companyId": "c1",
+  "companyName": "微盟",
+  "cityId": "c1",
+  "cityName": "上海",
+  "scaleId": "s1",
+  "scaleName": "1000人以上",
+  "industryId": "i1",
+  "industryName": "互联网",
+  "salaryId": "s1",
+  "salaryName": "15k-20k",
+  "experience": "1-3年",
+  "education": "专科",
+  "benefit": "成长空间大",
+  "description": "岗位职责：\n1.webapp开发；；..."
+}

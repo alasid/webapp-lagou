@@ -1,9 +1,9 @@
-<div class="companyInfo" ui-sref="company({id:1})">
-    <img src="image/company-3.jpg" alt="" class="logo">
+<div class="companyInfo" ui-sref="company({id:com.id})">
+    <img ng-src="{{com.imageUrl}}" alt="" class="logo">
     <div class="desc">
         <div class="dleft">
-            <h2 class="title" ng-bind="name">一起写</h2>
-            <p class="info">移动互联网/企业服务/B轮/15-50人</p>
+            <h2 class="title" ng-bind="com.name"></h2>
+            <p class="info" ng-bind="com.industry+'/'+com.state+'/'+com.people"></p>
         </div>
         <span class="dright"></span>
     </div> 

@@ -1,18 +1,18 @@
 {
-    "id": "p1",
-    "imageUrl": "/image/company-1.png",
-    "name": "一起写",
+    "id": "c1",
+    "imageUrl": "/image/wm.jpg",
+    "name": "微盟",
     "industry": "移动互联网",
     "state": "A轮",
-    "people": "50-150人",
+    "people": "1000人以上",
     "positionClass": [{
       "id": "jishu",
       "name": "技术",
       "positionList": [{
         "id": "p1",
-        "name": "IOS前端工程师",
-        "createdDate": "2016-04-16 23:30",
-        "salary": "15k-25k"
+        "name": "前端工程师",
+        "createdDate": "2017-02-27 11:05",
+        "salary": "15k-20k"
       }]
     }, {
       "id": "yunying",
@@ -20,7 +20,7 @@
       "positionList": [{
         "id": "y1",
         "name": "运营总监",
-        "createdDate": "2016-04-10 13:30",
+        "createdDate": "2017-02-27 12:05",
         "salary": "25k以上"
       }]
     }]

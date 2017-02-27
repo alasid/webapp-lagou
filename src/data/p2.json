@@ -1,0 +1,19 @@
+{
+  "id": "p2",
+  "imageUrl": "/image/bst.jpg",
+  "name": "IOS工程师",
+  "companyId": "c2",
+  "companyName": "百事通",
+  "cityId": "c2",
+  "cityName": "深圳",
+  "scaleId": "s2",
+  "scaleName": "150人以上",
+  "industryId": "i2",
+  "industryName": "互联网电视",
+  "salaryId": "s2",
+  "salaryName": "10k-15k",
+  "experience": "1年",
+  "education": "专科",
+  "benefit": "成长空间不大",
+  "description": "岗位职责：\n1.机顶盒开发；..."
+}

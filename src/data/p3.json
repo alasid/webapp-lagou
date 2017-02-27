@@ -1,0 +1,19 @@
+{
+  "id": "p3",
+  "imageUrl": "/image/nm.png",
+  "name": "技术主管",
+  "companyId": "c3",
+  "companyName": "柠檬科技",
+  "cityId": "c3",
+  "cityName": "北京",
+  "scaleId": "s3",
+  "scaleName": "100人以上",
+  "industryId": "i3",
+  "industryName": "科技",
+  "salaryId": "s3",
+  "salaryName": "20k-25k",
+  "experience": "2-3年",
+  "education": "本科",
+  "benefit": "技术的摇篮",
+  "description": "岗位职责：\n1.带领团队；..."
+}

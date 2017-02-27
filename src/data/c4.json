@@ -1,0 +1,27 @@
+{
+    "id": "c4",
+    "imageUrl": "/image/zdm.jpg",
+    "name": "什么值得买",
+    "industry": "科技",
+    "state": "N轮",
+    "people": "200人以上",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "电商",
+      "positionList": [{
+        "id": "p4",
+        "name": "安卓工程师",
+        "createdDate": "2017-02-27 11:05",
+        "salary": "13k-15k"
+      }]
+    }, {
+      "id": "yunying",
+      "name": "运营",
+      "positionList": [{
+        "id": "y4",
+        "name": "运营总监",
+        "createdDate": "2017-02-27 12:05",
+        "salary": "25k以上"
+      }]
+    }]
+}

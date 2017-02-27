@@ -1,0 +1,27 @@
+{
+    "id": "c3",
+    "imageUrl": "/image/nm.png",
+    "name": "柠檬科技",
+    "industry": "科技",
+    "state": "F轮",
+    "people": "100人以上",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "技术",
+      "positionList": [{
+        "id": "p3",
+        "name": "技术主管",
+        "createdDate": "2017-02-27 11:05",
+        "salary": "20k-25k"
+      }]
+    }, {
+      "id": "yunying",
+      "name": "运营",
+      "positionList": [{
+        "id": "y3",
+        "name": "运营总监",
+        "createdDate": "2017-02-27 12:05",
+        "salary": "25k以上"
+      }]
+    }]
+}

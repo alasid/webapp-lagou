@@ -1,10 +1,10 @@
 <div class="position-class">
     <div class="positype">
         <span>职位分类</span>
-        <button ng-click="isActive=$index" class="{{$index===isActive ? 'active': ''}}" ng-repeat="cls in com.positionClass">技术</button>
+        <button ng-click="showPositionList($index)" class="{{$index===isActive ? 'active': ''}}" ng-repeat="cls in com.positionClass" ng-bind="cls.name"></button>
     </div>
     <ul class="list">
-        <li class="item" ng-repeat="pos in cls.positionList">
+        <li class="item" ng-repeat="pos in positionList">
             <div class="left">
                 <h3 class="name" ng-bind="pos.name">前端工程师</h3>
                 <p class="time" ng-bind="pos.createdDate">2017-2-26 23:00</p>

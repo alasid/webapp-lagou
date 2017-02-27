@@ -18,20 +18,23 @@
     //    })
 
         function getCompany(id) {
-            $http.get('data/company.json?id='+id).then(function(res) {
-                $scope.company = res;
+            $http.get('data/'+id+'.json').then(function(res) {
+                $scope.company = res.data;
+                // console.log(res.data)
             })
         }
   
         var def = $q.defer();
-        $http.get('/data/position.json?id='+$state.params.id).then(function(res) {
+        $http.get('/data/'+$state.params.id+'.json').then(function(res) {
+            
             $scope.position = res.data;
+            // console.log(res.data)
             def.resolve(res.data);
             return def.promise;
             
             // console.log(res)
         }).then(function(obj) {
-            console.log(obj.companyId);
+            // console.log(obj.companyId);
             getCompany(obj.companyId);
             
         })
