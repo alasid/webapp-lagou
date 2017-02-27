@@ -13,6 +13,10 @@
 - 安装 `gulp-htmlmin/less/cssmin/concat/uglify/imagemin/clean/connect/load-plugins/open`
 - 构建自动化工具 编写gulpfile 并创建文件夹 文件 测试
 
+## 流程图
+
+![流程图](流程图.png)
+
 ## 配置首页 main.html
 
 - 包含 `head.html` `foot.html` `positionList.html`
