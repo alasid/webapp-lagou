@@ -1,55 +1,55 @@
 .search-bar {
-    background: @defaultColor;
+    background: @headbgColor;
+    color: @iconColor;
     position: relative;
     border-bottom: 1px solid @lineColor;
     height: 45px;
     line-height: 45px;
     .lbutton {
         float: left;
+        color: @defaultColor;
         height: 45px;
-        .fs(5);
+        .fs(4.5);
         text-align: center;
-        width: 88px;
-        border-right: 1px solid @lineColor;
-        .cityicon {
-            display: inline-block;
-            width: 8.5px;
-            height: 7px;
-            background: url(../image/icon.png) no-repeat -1px -2.5px;
-            background-size: 250px 250px;
-        }
+        width: 20%;
     }
     .rinput {
         height: 45px;
-        margin-left: 89px;
         position: relative;
         .inputer {
+            background-color: @defaultColor;
+            border-radius:20px;
             outline: none;
             display: block;
             border: none;
-            padding: 10px 0;
-            height: 25px;
-            line-height: 25px;
-            color: @listColor;
-            width: 75%;
-            margin: 0 0 0 5%;
-            .fs(5);
+            padding: 10px 0 10px 20px;
+            height: 12px;
+            line-height: 12px;
+            color: @iconColor;
+            width: 50%;
+            margin: 7px 0 0 0;
+            .fs(4);
             float: left;
         }
         .search {
             display: inline-block;
             width: 20%;
+            .fs(0);
             height: 45px;
             line-height: 45px;
             float: right;
             position: relative;
             em {
-                display: block;
-                margin: 14px auto 0;
+                display: inline-block;
+                margin: 14px 5px 0 -15px;;
                 width: 17px;
                 height: 17px;
                 background: url(../image/icon.png) no-repeat -14px -2.5px;
                 background-size: 250px 250px;
+            }
+            .sou {
+                .fs(4);
+                vertical-align: top;
             }
         }
     }

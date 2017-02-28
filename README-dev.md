@@ -144,4 +144,23 @@ angular.module('app').factory('cache',['$cookies',function($cookies){
 
 ## 搜索页面
 
-* ​
+* 在search.html
+* 给input绑定数据模型ng-model="name"
+* 搜索按钮 添加ng-click="search()"
+* 取消按钮 添加ng-click="name='';search()"
+* 在searchController中定义search函数并调用(函数中请求数据)
+
+```
+创建dict.js 定义dict全局变量缓存数据
+angular.module('app').value('dict',{}).run(['$http',function($http){
+  $http.get('data/city.json',function(res) {
+    dict.city = res;
+  });
+  $http.get('data/salary.json',function(res) {
+    dict.salary = res;
+  });
+  $http.get('data/scale.json',function(res) {
+    dict.scale = res;
+  });
+}])
+```

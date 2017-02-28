@@ -1,12 +1,12 @@
 <div class="search-bar ta-c">
-    <div class="lbutton">
-        <span class="city">全国</span>
-        <span class="cityicon"></span>
+    <div class="lbutton" ng-click="name='';search()">
+        <span class="city">取消</span>
     </div>
     <div class="rinput">
-        <input class="inputer" type="text" placeholder="搜索职位或公司">
-        <span class="search">
+        <input ng-model="name" class="inputer" type="text" placeholder="搜索职位或公司">
+        <span class="search" ng-click="search()">
             <em class="searchicon"></em>
+            <span class="sou">搜索</span>
         </span>
     </div>
 </div>
