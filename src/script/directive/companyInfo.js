@@ -1,4 +1,3 @@
-
 'use strict';
 angular.module('app').directive('appCompanyInfo',[function() {
     return {
