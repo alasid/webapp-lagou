@@ -55,3 +55,93 @@
 * positionInfo职位详情中的收藏设置为登录后显示 未登录时投简历显示为去登录 ng-show="isLogin" positionInfo中isLogin: "=" 
 * ng-bind="isLogin?'投个简历':'去登录'"
 * 在positionController中注入$http 获取数据加载到页面
+
+## 知识点
+
+- [ ] 实现 默认选择第一项 点击切换
+
+```
+/*html*/
+
+<button ng-click="showPositionList($index)" class="{{$index === isActive ? 'active' : ''}}" ng-repeat="item in com.positionClass"></button>
+
+/*js*/
+
+link: function($scope) {
+  $scope.showPositionList = function(index) {
+    $scope.positionList = $scope.com.positionClass[index].positionList;
+    $scope.isActive = idx;
+  }
+  $scope.$watch('com',function(new) {
+    if(new) {
+      $scope.showPositionList(0);
+    }
+  })
+}
+```
+
+- [ ] $scope自带方法
+
+```
+$broadcast() 父级向子级广播事件
+用法 在父级作用域内定义一个事件
+	$scope.$broadcast('abc',{id:1})
+	在子级作用域内调用on函数接收
+	事件名称 事件对象 数据
+	$scope.on('abc',function(event,data){
+      console.log(event,data);
+	})
+注意点 父级已经广播完毕而子级还未初始化（可以放在ajax请求中延迟广播）
+
+$emit() 子级像父级冒泡事件
+用法类似 注意发起与接收顺序
+
+$digest() ng中使用原生js操作dom会导致双向数据绑定失效
+解决：1杜绝在控制器中用原生js操作dom（使用scope对象/指令）
+	 2双向绑定失效--调用$digest函数同步数据
+```
+
+- [ ] 定义公共的属性和方法
+
+```
+angular.module('app').run(['$rootScope',function($rootScope) {
+  $rootScope.fn = function() {
+    console.log(1);
+  }
+}])
+```
+
+- [ ] 服务(service)和服务工厂(factory)
+
+```
+angular.module('app').service('cache',['$cookies',function($cookies){
+  this.put = function(key,value) {
+    $cookies.put(key,value)
+  };
+  this.get = function(key) {
+    $cookies.get(key);
+  };
+  this.remove = function(key) {
+    $cookies.remove(key);
+  };
+  
+}])
+
+区别：
+service返回函数，直接在this上声明
+factory返回对象，可以声明私有属性
+
+angular.module('app').factory('cache',['$cookies',function($cookies){
+	var obj = {};
+  return {
+    put: function(key,value) {
+      $cookies.put(key,value);
+    }
+  }
+}])
+
+```
+
+## 搜索页面
+
+* ​

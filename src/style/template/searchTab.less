@@ -1,0 +1,23 @@
+.search-tab {
+    background: @defaultColor;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    margin-top: 91px;
+    font-size: 0;
+    .item {
+        display: inline-block;
+        .fs(5);
+        width: 33.3%;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 2px solid @defaultColor;
+        &.active {
+            border-bottom: 2px solid @headbgColor;
+        }
+    }
+}
