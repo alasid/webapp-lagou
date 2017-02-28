@@ -152,7 +152,7 @@ angular.module('app').factory('cache',['$cookies',function($cookies){
 
 ```
 创建dict.js 定义dict全局变量缓存数据
-angular.module('app').value('dict',{}).run(['$http',function($http){
+angular.module('app').value('dict',{}).run(['dict','$http',function(dict,$http){
   $http.get('data/city.json',function(res) {
     dict.city = res;
   });
@@ -163,4 +163,35 @@ angular.module('app').value('dict',{}).run(['$http',function($http){
     dict.scale = res;
   });
 }])
+1tab切换
+给searchTab.html添加指令 动态获取数据
+searchTab.js中 使用link 绑定对应逻辑
+父级定义tabList 传入子级 子级遍历呈现tab数据
+点击时传入当前对象ng-click(item) 把当前id赋值给定义的selectId
+如果当前对象id等于点击的id 添加active样式 并通过tabClick通知父级
+
+2sheet展示
+父级获得当前点击对象后，通过tab-click(id,name)拿到对应列表数据
+挂载到定义的sheet对象上--$scope.sheet.list=dict[id].data
+$scope.sheet.visible=true
+显示sheet列表，并通过list数据渲染
+
+3获取点击的sheet元素
+给sheet中的li绑定ng-click="select(item)" 然后通知父级当前对象被点击，父级通过select="sClick(id,name)" 获取当前对象属性
+
+定义tabId 当tab被点击时更新id
+在sClick(id,name)中通过遍历判断点击的tabId是否为当前id
+是的话则替换name属性
+如果没有id则还原属性
+```
+
+过滤器
+
+```
+1自定义过滤器函数
+2在positionList.html中调用
+ng-repeat="item in data|filterByObj:filterObj"
+3在positionList.js中暴露filterObj接口
+4在search.html中，给search-list 调用filter-obj="filterObj"
+5在searchController中，初始化filterObj，并在sClick中调用
 ```

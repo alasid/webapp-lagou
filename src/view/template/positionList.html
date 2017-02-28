@@ -1,5 +1,5 @@
 <ul class="position-list">
-    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data">
+    <li ui-sref="position({id:item.id})" class="item" ng-repeat="item in data|filterByObj:filterObj">
         <img class="item-logo f-l d-ib" ng-src="{{item.imageUrl}}" alt="">
         <div class="item-desc">
             <h2 class="item-title">{{item.companyName}}</h2>
